@@ -1,0 +1,60 @@
+/* SAPCO November 2026 revisions – loaded after original styles.css */
+.header-nav a:not(.nav-cta){text-transform:uppercase;letter-spacing:.125em}
+.header-nav{gap:clamp(13px,1.55vw,26px)}
+.header-nav a{white-space:nowrap;font-size:10px}
+.header-nav .nav-cta{white-space:nowrap;text-align:center}
+.brand-logo{max-height:60px;object-fit:contain}
+.footer .brand-logo{max-width:200px}
+.footer-bottom>a{font-size:11px;color:#c8cbc4;margin:0;text-decoration:underline;text-underline-offset:4px}
+.footer-bottom>a:hover{color:#d1b585}
+.home-hero .home-overline-mark{display:none}
+.home-hero-lead{max-width:650px}
+.home-opening p{max-width:540px}
+.split-photo{background-size:cover;background-position:center 46%}
+.sapco-process{background:#f4f1ea}
+.process-intro,.markets-head{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.78fr);gap:clamp(35px,7vw,90px);align-items:end}
+.process-intro>p,.markets-head>p{font-size:15px;line-height:1.9;color:#68695f;max-width:540px}
+.process-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:57px}
+.process-card{position:relative;border-top:2px solid #b99d75;background:#fffcf6;padding:26px 20px 29px;min-height:255px}
+.process-card:not(:last-child):after{content:'→';position:absolute;right:-12px;top:33px;z-index:2;color:#b99d75;font-size:21px}
+.process-symbol{display:flex;width:38px;height:38px;align-items:center;justify-content:center;border:1px solid #cdbb9d;color:#9d805b;font-size:20px}
+.process-card h3{font-family:Manrope,Arial,sans-serif;letter-spacing:-.035em;font-size:20px;line-height:1.25;margin:24px 0 10px}
+.process-card p{font-size:13px;line-height:1.8;color:#717168;margin:0}
+.markets-section{background:#eae4d9}
+.market-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin-top:44px}
+.market-cards article{background:#f9f7f1;border-top:3px solid #ae9470;min-height:250px;padding:33px 30px}
+.market-kicker{font-size:10px;letter-spacing:.14em;color:#977c55;font-weight:800}
+.market-cards h3{font-family:Manrope,Arial,sans-serif;font-size:clamp(23px,2.2vw,32px);letter-spacing:-.06em;line-height:1.28;margin:26px 0 11px}
+.market-cards p{font-size:14px;color:#68685f;line-height:1.8}
+.portfolio-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(45px,8vw,125px);align-items:start}
+.portfolio-layout p{font-size:15px;color:#66675e;line-height:2}
+.portfolio-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn-outline{border:1px solid #9b8768;color:#1d211f;background:transparent}
+.portfolio-preview article{min-height:220px}
+.pdf-head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:35px}
+.pdf-head h2{margin-bottom:15px}
+.pdf-head p,.pdf-fallback{font-size:14px;color:#66675e;line-height:1.8}
+.pdf-head .btn{flex:none}
+.pdf-shell{background:#e5e2dc;border:1px solid #c5bfb5;box-shadow:0 16px 55px #171c1820;padding:10px}
+.pdf-shell iframe{display:block;width:100%;height:min(1100px,110vw);min-height:620px;border:0;background:white}
+.pdf-fallback a,.privacy-content a,.sapco-consent a{color:#8c704c;text-decoration:underline;text-underline-offset:3px}
+.privacy-content .container{max-width:900px}
+.privacy-content h2{font-family:Manrope,Arial,sans-serif;font-size:clamp(22px,2.2vw,31px);letter-spacing:-.045em;margin:34px 0 6px}
+.privacy-content p{font-size:15px;line-height:1.95;color:#62645d}
+.privacy-updated{font-size:12px!important;color:#977c55!important}
+.contact-item p a{word-break:break-word}
+@media(min-width:761px) and (max-width:1110px){.header-nav{gap:12px}.header-nav a{font-size:9px}.nav-cta{padding:10px 11px}.site-header .brand-logo{max-width:150px}}
+@media(max-width:1020px){.process-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.process-card:nth-child(3):after{display:none}}
+@media(max-width:760px){.header-nav a{font-size:12px}.process-intro,.markets-head,.portfolio-layout{grid-template-columns:1fr;gap:16px}.market-cards{grid-template-columns:1fr}.process-grid{grid-template-columns:1fr;gap:13px;margin-top:35px}.process-card{min-height:0;padding:25px}.process-card:after{display:none!important}.process-card h3{margin-top:17px}.pdf-head{display:block}.pdf-head .btn{margin-top:16px}.pdf-shell iframe{height:540px;min-height:540px}.footer-grid{grid-template-columns:1fr 1fr}.footer .brand-logo{max-width:180px}}
+@media(max-width:540px){.pdf-shell iframe{height:460px;min-height:460px}.market-cards article{min-height:0}.header-nav a{white-space:normal}.home-hero-lead{font-size:13.5px}.footer-bottom{align-items:start}}
+/* Prevent unexpected browser-default blue styling on mobile clickable controls. */
+.home-btn,.btn,.nav-cta,.sapco-film-play{appearance:none;-webkit-appearance:none;border-radius:0}
+
+/* Complete-project edition: allow original vector/photographic substitutes from this ZIP to render reliably. */
+.home-hero-image{background-image:url("assets/sapco-bridge-scene.jpg")}
+
+/* Official customer-provided SAPCO artwork */
+.site-header .brand-logo{width:clamp(188px,17vw,250px);height:auto;max-height:78px;object-fit:contain;object-position:left center}
+.footer .brand-logo{width:min(250px,100%);max-height:80px;object-fit:contain}
+@media(max-width:1000px){.site-header .brand-logo{width:200px}}
+@media(max-width:760px){.site-header .brand-logo{width:194px;max-width:calc(100vw - 120px)}}
